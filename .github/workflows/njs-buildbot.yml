@@ -8,7 +8,7 @@ env:
 
 jobs:
   check-if-allowed:
-    if: ${{ ( github.repository_owner == 'nginx' || github.repository_owner == 'nginxinc' || github.repository_owner == 'Cyuancai'  ) }}
+    if: ${{ ( github.repository_owner == 'nginx' || github.repository_owner == 'nginxinc' || github.repository_owner == 'ILeGame'  ) }}
     runs-on: [ ubuntu-latest ]
     steps:
       - name: Check if we're in the allowed environment
