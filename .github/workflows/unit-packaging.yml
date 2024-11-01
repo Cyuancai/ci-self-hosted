@@ -5,7 +5,7 @@ on:
 
 jobs:
   check-if-allowed:
-    if: ${{ ( github.repository_owner == 'nginx' || github.repository_owner == 'nginxinc' || github.repository_owner == 'Cyuancai' ) }}
+    if: ${{ ( github.repository_owner == 'nginx' || github.repository_owner == 'nginxinc' || github.repository_owner == 'ILeGame' ) }}
     runs-on: [ ubuntu-latest ]
     steps:
       - name: Check if we're in the allowed environment
@@ -13,7 +13,7 @@ jobs:
           org_found=0
           event_found=0
           ref_found=0
-          ALLOWED_ORGS="nginx nginxinc Cyuancai"
+          ALLOWED_ORGS="nginx nginxinc ILeGame"
           ALLOWED_EVENTS="push"
           ALLOWED_REFS="refs/heads/main refs/heads/master"
           for org in $ALLOWED_ORGS; do
