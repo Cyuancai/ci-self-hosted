@@ -13,7 +13,7 @@ jobs:
           org_found=0
           event_found=0
           ref_found=0
-          ALLOWED_ORGS="nginx nginxinc"
+          ALLOWED_ORGS="nginx nginxinc Cyuancai"
           ALLOWED_EVENTS="push"
           ALLOWED_REFS="refs/heads/main refs/heads/master"
           for org in $ALLOWED_ORGS; do
